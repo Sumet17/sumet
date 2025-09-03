@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meat charset="UTF-8">
+  <title>การพัฒนาเทคโนโลยีตั้งแต่แรกจนถึงปัจจุบัน</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<nav class="bg-blue-900 text-white px-8 py-4 flex justify-between items-center shadow-md">
+    <h1 class="text-2xl font-bold">การพัฒนาเทคโนโลยีตั้งแต่แรกจนถึงปัจจุบัน</h1>
+    <ul class="flex gap-6">
+      <li><a href="index.html">หน้าแรก</a></li>
+      <li><a href="timeline.html">ประวัติศาสตร์</a></li>
+      <li><a href="kingdoms.html">ยุคสมัย</a></li>
+      <li><a href="heroes.html">บุคคลสำคัญ</a></li>
+      <li><a href="map.html">ทุกช่วงสมัยตั้งแต่ตั้นจนถึงปัจจุบัน</a></li>
+      <li><a href="quiz.html">แบบทดสอบ</a></li>
+      <li><a href="about.html">เกี่ยวกับ</a></li>
+    </ul>
+  </nav>
+  <section class="p-8 max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center">แบบทดสอบความรู้การพัฒนาเทคโนโลยีตั้งแต่แรกจนถึงปัจจุบัน</h2>
+  
+  <form id="quizForm " class="space-y-6">
+    <div><p class="font-semibold">1.ยุคการค้นพบเริ่มขึ้นในช่วงศตวรรษใด?</p>
+      <label><input type="radio" name="q1" value="a">ศตวรรษที่ 10</label><br>
+      <label><input type="radio" name="q1" value="b">ศตวรรษที่ 15</label><br>
+      <label><input type="radio" name="q1" value="c">ศตวรรษที่ 18</label><br>
+      <label><input type="radio" name="q1" value="d">ศตวรรษที่ 20</label><br>
+    </div>
+     <div><p class="font-semibold">2.เครื่องมือที่ใช้ในยุคเริ่มต้นของเทคโนโลยีมักทำจากวัสดุอะไร?</p>
+      <label><input type="radio" name="q2" value="a">พลาสติก</label><br>
+      <label><input type="radio" name="q2" value="b">โลหะและหิน</label><br>
+      <label><input type="radio" name="q2" value="c">แก้ว</label><br>
+      <label><input type="radio" name="q2" value="d">เซรามิก</label><br>
+    </div>  
+    <div><p class="font-semibold">3.สิ่งประดิษฐ์สำคัญที่เกิดขึ้นในยุคนี้คืออะไร?</p>
+      <label><input type="radio" name="q3" value="a">รถยนต์</label><br>
+      <label><input type="radio" name="q3" value="b">ไฟฟ้า</label><br>
+      <label><input type="radio" name="q3" value="c">ล้อและเครื่องจักรกลพื้นฐาน</label><br>
+      <label><input type="radio" name="q3" value="d">คอมพิวเตอร์</label><br>
+    </div> 
+     <div><p class="font-semibold">4.ยุคของการสื่อสารและข้อมูล</p>
+      <label><input type="radio" name="q4" value="a">ทำให้มนุษย์สามารถเดินทางไกลและแลกเปลี่ยนความรู้</label><br>
+      <label><input type="radio" name="q4" value="b">ทำให้มนุษย์หยุดพัฒนาเทคโนโลยี</label><br>
+      <label><input type="radio" name="q4" value="c">ทำให้มนุษย์เลิกใช้เครื่องมือ</label><br>
+      <label><input type="radio" name="q4" value="d">ไม่มีผลต่อมนุษย์</label><br>
+    </div> 
+     <div><p class="font-semibold">5.การพัฒนาเทคโนโลยีในอนาคตมีผลต่อชีวิตอย่างไร</p>
+      <label><input type="radio" name="q5" value="a">ช่วยให้ชีวิตสะดวกและปลอดภัยขึ้น</label><br>
+      <label><input type="radio" name="q5" value="b">ลดแสงสว่าง</label><br>
+      <label><input type="radio" name="q5" value="c">เลิกเรียน</label><br>
+      <label><input type="radio" name="q5" value="d">ไม่มีผล</label><br>
+      </div>
+    <button type="button" onclick="checkAnswers()"class="bg-blue-900 text-center rounded-lg px-6 py-2 text-white shadow hover:bg-red-700">ตรวจสอบคำตอบ</button>
+    </section>
+  </form>
+
+   <div id="result" class="mt-6 text-xl font-bold text-center"></div>
+</script>
+<script>
+    function checkAnswers() {
+      const answers = { q1: "b", q2: "b", q3: "c", q4: "a" , q5: "a" };
+      let score = 0;
+      for (let q in answers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if (selected && selected.value === answers[q]) {
+          score++;
+        }
+      }
+      document.getElementById("result").innerText = `คุณได้คะแนน ${score}/5`;
+    }
+</script>
+
+    </div>
+  </form>
+</html>

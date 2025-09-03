@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>การพัฒนาเทคโนโลยีตั้งแต่แรกจนถึงปัจจุบัน - ยุคสมัย</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    /* กรอบเนื้อหาแบบเด่นขึ้น พร้อมแถบสีม่วงด้านข้าง */
+    .card-frame {
+      border: 2px solid rgb(203 213 225); /* slate-300 */
+      border-radius: 1rem; /* rounded-2xl */
+      background: rgb(255 255 255); /* สีขาวเต็ม */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาเล็ก */
+      padding: 1.5rem; /* p-6 */
+      position: relative;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card-frame::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 0.5rem;
+      background-color: rgb(139 92 246); /* violet-500 */
+      border-top-left-radius: 0.75rem;
+      border-bottom-left-radius: 0.75rem;
+    }
+    .card-frame:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- Navigation -->
+  <!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>การพัฒนาเทคโนโลยีตั้งแต่แรกจนถึงปัจจุบัน</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-900 text-white px-8 py-4 flex justify-between items-center shadow-md">
+    <h1 class="text-2xl font-bold">การพัฒนาเทคโนโลยีตั้งแต่แรกจนถึงปัจจุบัน</h1>
+    <ul class="flex gap-6">
+      <li><a href="index.html" class="hover:text-gray-300">หน้าแรก</a></li>
+      <li><a href="timeline.html" class="hover:text-gray-300">ประวัติศาสตร์</a></li>
+      <li><a href="kingdoms.html" class="hover:text-gray-300">ยุคสมัย</a></li>
+      <li><a href="heroes.html" class="hover:text-gray-300">บุคคลสำคัญ</a></li>
+      <li><a href="map.html" class="hover:text-gray-300">ทุกช่วงสมัยตั้งแต่ตั้นจนถึงปัจจุบัน</a></li>
+      <li><a href="quiz.html" class="hover:text-gray-300">แบบทดสอบ</a></li>
+      <li><a href="about.html" class="hover:text-gray-300">เกี่ยวกับ</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <header class="bg-gradient-to-r from-blue-800 to-red-600 text-white py-16 text-center shadow-md">
+    <h2 class="text-3xl font-bold mb-3">ยุคสมัยของการพัฒนาเทคโนโลยี</h2>
+    <p class="max-w-2xl mx-auto text-lg">สำรวจพัฒนาการของเทคโนโลยีตั้งแต่ยุคหินจนถึงยุคดิจิทัลสมัยใหม่</p>
+  </header>
+
+  <!-- Content Section -->
+  <main class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8">
+
+    <!-- Card 1 -->
+    <div class="card-frame">
+      <h3 class="text-xl font-bold mb-3">ยุคหิน</h3>
+      <p class="text-slate-600">การใช้หิน ไม้ และกระดูกเป็นเครื่องมือ ก่อไฟ และการล่าสัตว์</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card-frame">
+      <h3 class="text-xl font-bold mb-3">ยุคโลหะ</h3>
+      <p class="text-slate-600">เริ่มใช้ทองแดง สำริด และเหล็กสร้างอาวุธและเครื่องมือที่แข็งแรง</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card-frame">
+      <h3 class="text-xl font-bold mb-3">ยุคโบราณ</h3>
+      <p class="text-slate-600">กำเนิดอารยธรรมโบราณ เช่น อียิปต์ กรีก และโรมัน พร้อมระบบอักษร</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card-frame">
+      <h3 class="text-xl font-bold mb-3">ยุคกลาง</h3>
+      <p class="text-slate-600">การพัฒนาเกษตรกรรม เครื่องจักรกลเบื้องต้น และความรู้จากมหาวิทยาลัย</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card-frame">
+      <h3 class="text-xl font-bold mb-3">ยุคฟื้นฟูศิลปวิทยา</h3>
+      <p class="text-slate-600">การค้นคว้าวิทยาศาสตร์ ศิลปะ และการสำรวจโลกก้าวหน้า</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card-frame">
+      <h3 class="text-xl font-bold mb-3">ยุคปฏิวัติอุตสาหกรรม</h3>
+      <p class="text-slate-600">เครื่องจักรไอน้ำ รถไฟ การผลิตแบบโรงงาน และการค้าโลก</p>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card-frame">
+      <h3 class="text-xl font-bold mb-3">ยุคไฟฟ้าและวิทยาศาสตร์</h3>
+      <p class="text-slate-600">การค้นพบไฟฟ้า โทรเลข โทรศัพท์ และเทคโนโลยีการแพทย์</p>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card-frame">
+      <h3 class="text-xl font-bold mb-3">ยุคสารสนเทศ</h3>
+      <p class="text-slate-600">การเกิดคอมพิวเตอร์ อินเทอร์เน็ต และการสื่อสารไร้พรมแดน</p>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="card-frame">
+      <h3 class="text-xl font-bold mb-3">ยุคดิจิทัลสมัยใหม่</h3>
+      <p class="text-slate-600">AI หุ่นยนต์ เทคโนโลยีชีวภาพ การสื่อสาร 5G และการสำรวจอวกาศ</p>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-red-900 text-white py-6 text-center">
+    <p>© <span id="year"></span> การพัฒนาเทคโนโลยีตั้งแต่แรกจนถึงปัจจุบัน</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
